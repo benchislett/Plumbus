@@ -1,0 +1,180 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+
+## Main Colors
+
+[color]
+
+transparent = #00000000
+white = #FFFFFF
+black = #000000
+
+background = #1F1F1F
+foreground = #FFFFFF
+foreground-alt = #A9ABB0
+
+active = #FFFFFF
+urgent = #EF5350
+occupied = #42A5F5
+
+shade1 = #311B92
+shade2 = #4527A0
+shade3 = #512DA8
+shade4 = #5E35B1
+shade5 = #673AB7
+shade6 = #7E57C2
+shade7 = #9575CD
+shade8 = #B39DDB
+shade8-alt = #2C2C2C
+
+# Material Color Scheme
+
+red = #e53935
+pink = #d81b60
+purple = #8e24aa
+deep-purple = #5e35b1
+indigo = #3949ab
+blue = #1e88e5
+light-blue = #039be5
+cyan = #00acc1
+teal = #00897b
+green = #43a047
+light-green = #7cb342
+lime = #c0ca33
+yellow = #fdd835
+amber = #ffb300
+orange = #fb8c00
+deep-orange = #f4511e
+brown = #6d4c41
+grey = #757575
+blue-gray = #546e7a
+
+
+## Main Polybar
+
+[bar/main]
+
+# Layout
+
+width = 96%
+height = 32
+offset-x = 2%
+offset-y = 2%
+bottom = false
+fixed-center = false
+line-size = 2
+
+# Colors
+
+background = ${color.background}
+foreground = ${color.foreground}
+
+# Fonts
+
+font-0 = "Fantasque Sans Mono:pixelsize=10;3"
+font-1 = "Iosevka Nerd Font:pixelsize=13;3"
+
+# Mouse functionality
+
+scroll-up = i3wm-wsnext
+scroll-down = i3wm-wsprev
+
+# Bar Modules
+
+modules-left = search workspaces github gmail
+modules-right = volume date
+
+
+## Modules
+
+[module/search]
+type = custom/text
+content = 
+content-padding = 2
+content-background = ${color.shade1}
+content-foreground = ${color.foreground}
+
+click-left = rofi -show run -theme .rofi_theme
+click-right = rofi -show window -theme .rofi_theme
+
+[module/workspaces]
+type = internal/xworkspaces
+pin-workspaces = false
+enable-click = true
+enable-scroll = true
+format-padding = 1
+
+icon-default = 
+
+format = <label-state>
+format-background = ${color.shade2}
+label-active = 
+label-occupied = 
+label-urgent = 
+label-empty = 
+
+label-empty-padding = 1
+label-active-padding = 1
+label-urgent-padding = 1
+label-occupied-padding = 1
+
+label-empty-foreground = ${color.foreground}
+label-active-foreground = ${color.active}
+label-urgent-foreground = ${color.urgent}
+label-occupied-foreground = ${color.occupied}
+
+[module/github]
+type = custom/text
+content = 
+content-padding = 2
+content-weight = 19
+content-foreground = ${color.foreground-alt}
+
+click-left = xdg-open https://www.github.com
+
+[module/gmail]
+type = custom/text
+content = 
+content-padding = 2
+content-foreground = ${color.foreground-alt}
+
+click-left = xdg-open https://www.gmail.com
+
+[module/volume]
+type = internal/alsa
+format-volume = <ramp-volume> <label-volume>
+format-volume-padding = 2
+format-volume-background = ${color.shade6}
+
+label-volume = %percentage%%
+label-muted = "婢"
+label-muted-background = ${color.shade6}
+label-muted-padding = 2
+
+ramp-volume-0 = 奄
+ramp-volume-1 = 奄
+ramp-volume-2 = 奔
+ramp-volume-3 = 奔
+ramp-volume-4 = 墳
+ramp-volume-5 = 墳
+ramp-volume-6 = 墳
+
+[module/date]
+type = internal/date
+interval = 30
+label = %time%
+label-padding = 2
+label-background = ${color.shade3}
+time =  %I:%M %p
+time-alt =  %Y-%m-%d
