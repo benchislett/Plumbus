@@ -105,8 +105,8 @@ content-padding = 2
 content-background = ${color.shade1}
 content-foreground = ${color.foreground}
 
-click-left = rofi -show run -theme .rofi_theme
-click-right = rofi -show window -theme .rofi_theme
+click-left = rofi -show run -theme ~/.rofi_theme
+click-right = rofi -show window -theme ~/.rofi_theme
 
 [module/workspaces]
 type = internal/xworkspaces

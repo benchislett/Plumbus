@@ -24,8 +24,8 @@ bindsym $mod+Return exec i3-sensible-terminal
 bindsym $mod+Shift+q kill
 
 # Rofi menu
-bindsym $mod+d exec rofi -show run .rofi_theme
-bindsym $mod+Shift+d exec rofi -show window .rofi_theme
+bindsym $mod+d exec rofi -show run -theme ~/.rofi_theme
+bindsym $mod+Shift+d exec rofi -show window -theme ~/.rofi_theme
 
 # change focus
 bindsym $mod+j focus left
