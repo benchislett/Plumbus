@@ -1,2 +1,3 @@
 # Plumbus
-Because everyone has a Plumbus in their home
+
+A collection of my .dotfiles
