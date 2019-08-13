@@ -1,0 +1,82 @@
+
+!! Display Settings
+Xft.dpi:	96
+Xft.antialias:	true
+Xft.rgba:	rgb
+
+
+!! Color Scheme
+
+! Black
+*color0:	rgb:19/19/19
+*color8:	rgb:25/25/25
+
+! Red
+*color1:	rgb:80/32/32
+*color9:	rgb:98/2b/2b
+
+! Green
+*color2:	rgb:5b/76/2f
+*color10:	rgb:89/b8/3f
+
+! Brown/Yellow
+*color3:	rgb:aa/99/43
+*color11:	rgb:ef/ef/60
+
+! Blue
+*color4:	rgb:32/4c/80
+*color12:	rgb:2b/4f/98
+
+! Magenta
+*color5:	rgb:70/6c/9a
+*color13:	rgb:82/6a/b1
+
+! Cyan
+*color6:	rgb:92/b1/9e
+*color14:	rgb:a1/cd/cd
+
+! White
+*color7:	rgb:ff/ff/ff
+*color15:	rgb:dd/dd/dd
+
+
+!! URxvt Config
+
+! Colors
+URxvt*background:	#000000
+URxvt*foreground:	#ffffff
+
+! Transparency
+URxvt.transparent:	true
+URxvt.tintColor:	white
+URxvt.shading:		15
+
+! Extensions
+URxvt.perl-ext-common:	default,matcher,resize-font
+
+! Misc
+URxvt.geometry:		90x25+180+200
+URxvt.cursorColor:	red3
+URxvt.scrollBar:	False
+URxvt.saveLines:	3000
+URxvt.preeditType:	Root
+
+! Font Resize
+URxvt.resize-font.smaller:	C-j
+URxvt.resize-font.bigger:	C-k
+
+! Clickable URLs
+URxvt.urlLauncher:	google-chrome-stable
+URxvt.matcher.button:	1
+
+! Normal Font
+URxvt*font:xft:MesloLGM Nerd Font Mono:pixelsize=12:antialias=true
+
+! Bold Font
+! URxvt*boldFont:xft:Hack Nerd Font:style=Bold:pixelsize=12:antialias=true
+
+! Italic Font
+! URxvt*italicFont:xft:Hack Nerd Font:style=Italic:pixelsize=12:antialias=true
+
+! Bold and Italic Font
+! URxvt*boldItalicFont:xft:Hack Nerd Font:style=Bold Italic:pixelsize=12:antialias=true
