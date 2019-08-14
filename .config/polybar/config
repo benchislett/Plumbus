@@ -67,7 +67,7 @@ blue-gray = #546e7a
 
 # Layout
 
-width = 96%
+width = 100%
 height = 32
 offset-x = 2%
 offset-y = 2%
@@ -99,6 +99,7 @@ modules-right = volume date
 ## Modules
 
 [module/search]
+
 type = custom/text
 content = 
 content-padding = 2
