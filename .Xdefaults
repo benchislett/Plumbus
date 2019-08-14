@@ -7,44 +7,45 @@ Xft.rgba:	rgb
 
 !! Color Scheme
 
-! Black
-*color0:	rgb:19/19/19
-*color8:	rgb:25/25/25
+! Misc
+*.foreground:   #ffffff
+*.background:   #1b1b1b
+*.cursorColor:  #ffffff
 
-! Red
-*color1:	rgb:80/32/32
-*color9:	rgb:98/2b/2b
+! Gray
+*.color0:       #3d3d3d
+*.color8:       #4d4d4d
 
-! Green
-*color2:	rgb:5b/76/2f
-*color10:	rgb:89/b8/3f
+! Mauve
+*.color1:       #bf66b6
+*.color9:       #d67edd
 
-! Brown/Yellow
-*color3:	rgb:aa/99/43
-*color11:	rgb:ef/ef/60
+! Deep Blue
+*.color2:       #503ea2
+*.color10:      #794fe5
 
-! Blue
-*color4:	rgb:32/4c/80
-*color12:	rgb:2b/4f/98
+! Periwinkle
+*.color3:       #7f73ce
+*.color11:      #9893ff
 
-! Magenta
-*color5:	rgb:70/6c/9a
-*color13:	rgb:82/6a/b1
+! Deep Purple
+*.color4:       #681a91
+*.color12:      #8a4eaf
 
-! Cyan
-*color6:	rgb:92/b1/9e
-*color14:	rgb:a1/cd/cd
+! Pink
+*.color5:       #b73891
+*.color13:      #b15d9a
+
+! Baby Blue
+*.color6:       #8292b2
+*.color14:      #95a7cc
 
 ! White
-*color7:	rgb:ff/ff/ff
-*color15:	rgb:dd/dd/dd
+*.color7:       #c8cacc
+*.color15:      #edeff2
 
 
 !! URxvt Config
-
-! Colors
-URxvt*background:	#000000
-URxvt*foreground:	#ffffff
 
 ! Transparency
 URxvt.transparent:	true
@@ -56,7 +57,6 @@ URxvt.perl-ext-common:	default,matcher,resize-font
 
 ! Misc
 URxvt.geometry:		90x25+180+200
-URxvt.cursorColor:	red3
 URxvt.scrollBar:	False
 URxvt.saveLines:	3000
 URxvt.preeditType:	Root
@@ -71,12 +71,3 @@ URxvt.matcher.button:	1
 
 ! Normal Font
 URxvt*font:xft:MesloLGM Nerd Font Mono:pixelsize=12:antialias=true
-
-! Bold Font
-! URxvt*boldFont:xft:Hack Nerd Font:style=Bold:pixelsize=12:antialias=true
-
-! Italic Font
-! URxvt*italicFont:xft:Hack Nerd Font:style=Italic:pixelsize=12:antialias=true
-
-! Bold and Italic Font
-! URxvt*boldItalicFont:xft:Hack Nerd Font:style=Bold Italic:pixelsize=12:antialias=true
