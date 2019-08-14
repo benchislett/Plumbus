@@ -49,7 +49,7 @@ URxvt*foreground:	#ffffff
 ! Transparency
 URxvt.transparent:	true
 URxvt.tintColor:	white
-URxvt.shading:		15
+URxvt.shading:		25
 
 ! Extensions
 URxvt.perl-ext-common:	default,matcher,resize-font
