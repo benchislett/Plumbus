@@ -22,7 +22,6 @@ black = #000000
 
 background = #1F1F1F
 foreground = #FFFFFF
-foreground-alt = #A9ABB0
 
 active = #FFFFFF
 urgent = #EF5350
@@ -136,11 +135,9 @@ label-urgent-foreground = ${color.urgent}
 label-occupied-foreground = ${color.occupied}
 
 [module/github]
-type = custom/text
-content = 
-content-padding = 2
-content-weight = 19
-content-foreground = ${color.foreground-alt}
+type = custom/script
+exec = echo "   $(curl -fs https://api.github.com/notifications?access_token=$GH_TOKEN | jq '.[].unread' | grep -c true)"
+interval = 60
 
 click-left = xdg-open https://www.github.com
 
@@ -148,7 +145,6 @@ click-left = xdg-open https://www.github.com
 type = custom/text
 content = 
 content-padding = 2
-content-foreground = ${color.foreground-alt}
 
 click-left = xdg-open https://www.gmail.com
 
