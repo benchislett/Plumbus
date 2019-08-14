@@ -10,7 +10,7 @@ ENABLE_CORRECTION="true"
 
 DISABLE_UNTRACKED_FILES_DIRTY="true"
 
-plugins=(git)
+plugins=()
 
 source $ZSH/oh-my-zsh.sh
 
