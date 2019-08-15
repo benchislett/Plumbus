@@ -1,9 +1,10 @@
 alias c='nocorrect clear'
-alias status-no-git='clear && ls -AFHv'
-alias status='(git rev-parse --git-dir && clear && git status && echo && ls -AFHv) || (status-no-git)'
+alias ls='ls -AFHv --color=tty'
+alias status-no-git='clear && ls'
+alias status='(git rev-parse --git-dir && clear && git status && echo && ls) || (status-no-git)'
 alias s='status'
-alias superstatus-no-git='clear && neofetch && ls -AFHv'
-alias superstatus='(git rev-parse --git-dir && clear && neofetch && git status && echo && ls -AFHv) || (superstatus-no-git)'
+alias superstatus-no-git='clear && neofetch && ls'
+alias superstatus='(git rev-parse --git-dir && clear && neofetch && git status && echo && ls) || (superstatus-no-git)'
 alias ss='superstatus'
 
 
