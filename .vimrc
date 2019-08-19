@@ -55,6 +55,9 @@ call plug#begin('~/.vim-plugins')
 " Toggle comments on stuff with `gc`
 Plug 'tpope/vim-commentary'
 
+" Tabular, requirement for vim-markdown
+Plug 'godlygeek/tabular'
+
 " Language plugins
 " Julia
 Plug 'julialang/julia-vim'
@@ -62,6 +65,8 @@ Plug 'julialang/julia-vim'
 Plug 'pangloss/vim-javascript'
 " Typescript
 Plug 'leafgarland/typescript-vim'
+" Markdown
+Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
