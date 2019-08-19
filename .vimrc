@@ -44,6 +44,9 @@ set path=**
 set number
 set relativenumber
 
+" Scroll wheel
+set mouse=a
+
 
 " Plugins
 
@@ -53,7 +56,12 @@ call plug#begin('~/.vim-plugins')
 Plug 'tpope/vim-commentary'
 
 " Language plugins
-Plug 'sheerun/vim-polyglot'
+" Julia
+Plug 'julialang/julia-vim'
+" Javascript
+Plug 'pangloss/vim-javascript'
+" Typescript
+Plug 'leafgarland/typescript-vim'
 
 call plug#end()
 
