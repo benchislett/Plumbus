@@ -70,3 +70,7 @@ Plug 'plasticboy/vim-markdown'
 
 call plug#end()
 
+
+" Plugin config
+let g:vim_markdown_folding_disabled = 1
+
