@@ -12,6 +12,12 @@ command W w !sudo tee % > /dev/null
 " Turn on completion hints
 set wildmenu
 
+" Enter the new age
+set nocompatible
+
+" Allow backspace deletion
+set backspace=indent,eol,start
+
 " Ignore extra files/dirs in wildmenu
 set wildignore+=*/.git/*,*/node_modules/*
 
@@ -54,6 +60,12 @@ call plug#begin('~/.vim-plugins')
 
 " Toggle comments on stuff with `gc`
 Plug 'tpope/vim-commentary'
+
+" Git wrappers
+Plug 'tpope/vim-fugitive'
+
+" Git diff margin
+Plug 'airblade/vim-gitgutter'
 
 " Tabular, requirement for vim-markdown
 Plug 'godlygeek/tabular'
