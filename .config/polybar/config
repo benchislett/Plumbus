@@ -32,8 +32,8 @@ shade2 = #4527A0
 shade3 = #512DA8
 shade4 = #5E35B1
 shade5 = #673AB7
-shade6 = #7E57C2
-shade7 = #9575CD
+shade6 = #6C48AB
+shade7 = #7E57C2
 shade8 = #B39DDB
 shade8-alt = #2C2C2C
 
@@ -92,7 +92,7 @@ scroll-down = i3wm-wsprev
 # Bar Modules
 
 modules-left = search workspaces github gmail
-modules-right = volume date
+modules-right = brightness battery network volume date
 
 
 ## Modules
@@ -148,15 +148,80 @@ content-padding = 2
 
 click-left = xdg-open https://www.gmail.com
 
+[module/brightness]
+type = custom/script
+exec = zsh ~/.config/polybar/brightness.sh
+
+format-background = ${color.shade7}
+format-padding = 2
+
+scroll-up = light -A 5
+scroll-down = light -U 5
+
+interval = 1
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+
+battery = BAT1
+adapter = ADP1
+
+time-format = %H:%M
+
+format-charging-background = ${color.shade6}
+format-charging-padding = 2
+format-charging = <ramp-capacity> <label-charging>
+
+format-discharging-background = ${color.shade6}
+format-discharging-padding = 2
+format-discharging =  <ramp-capacity> <label-discharging>
+
+label-charging = %percentage%% %time%
+
+label-discharging = %percentage%% %time%
+
+label-full = %percentage%%
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[module/network]
+type = internal/network
+interface = wlo1
+
+interval = 5.0
+
+format-connected-background = ${color.shade5}
+format-connected-padding = 2
+format-connected = <ramp-signal> <label-connected>
+
+format-disconnected-background = ${color.shade5}
+format-disconnected-padding = 2
+format-disconnected = <label-disconnected>
+
+label-connected = "%{A1:nm-connection-editor &:} %essid% %downspeed:8% %{A}"
+label-disconnected = "%{A1:nm-connection-editor &:} %{A}"
+
+ramp-signal-0 = 睊
+ramp-signal-1 = 直
+ramp-signal-2 = 直
+ramp-signal-3 = 直
+ramp-signal-4 = 直
+
 [module/volume]
 type = internal/alsa
 format-volume = <ramp-volume> <label-volume>
 format-volume-padding = 2
-format-volume-background = ${color.shade6}
+format-volume-background = ${color.shade4}
 
 label-volume = %percentage%%
 label-muted = "婢"
-label-muted-background = ${color.shade6}
+label-muted-background = ${color.shade4}
 label-muted-padding = 2
 
 ramp-volume-0 = 奄
@@ -175,3 +240,4 @@ label-padding = 2
 label-background = ${color.shade3}
 time =  %I:%M %p
 time-alt =  %Y-%m-%d
+
