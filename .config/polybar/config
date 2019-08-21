@@ -172,17 +172,20 @@ time-format = %H:%M
 
 format-charging-background = ${color.shade6}
 format-charging-padding = 2
-format-charging = <ramp-capacity> <label-charging>
+format-charging =  <ramp-capacity> <label-charging>
 
 format-discharging-background = ${color.shade6}
 format-discharging-padding = 2
-format-discharging =  <ramp-capacity> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
+
+format-full-background = ${color.shade6}
+format-full-padding = 2
 
 label-charging = %percentage%% %time%
 
 label-discharging = %percentage%% %time%
 
-label-full = %percentage%%
+label-full =  %percentage%%
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
