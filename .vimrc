@@ -40,8 +40,8 @@ set expandtab " Turn tabs into spaces
 set smarttab " Smart tab insertion
 set shiftwidth=2 " 1 tab == 2 spaces
 set tabstop=2
-set ai " Auto indent
-set si " Smart indent
+set autoindent " Auto indent
+set smartindent " Smart indent
 
 " Find only files from vim caller's path downward
 set path=**
@@ -80,6 +80,8 @@ Plug 'leafgarland/typescript-vim'
 " Markdown
 Plug 'plasticboy/vim-markdown'
 
+" Code completion
+Plug 'davidhalter/jedi-vim'
 call plug#end()
 
 
