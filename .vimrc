@@ -82,9 +82,14 @@ Plug 'plasticboy/vim-markdown'
 
 " Code completion
 Plug 'davidhalter/jedi-vim'
-call plug#end()
 
+" Code formatting
+Plug 'tell-k/vim-autopep8'
+
+call plug#end()
 
 " Plugin config
 let g:vim_markdown_folding_disabled = 1
 
+let g:jedi#popup_on_dot = 0
+let g:jedi#show_call_signatures = 2
