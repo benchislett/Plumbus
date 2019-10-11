@@ -2,6 +2,9 @@
 " History length
 set history=1024
 
+" Row/Col indicator
+set ruler
+
 " Enable filetype plugins
 filetype plugin on
 filetype indent on
