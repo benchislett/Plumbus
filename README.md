@@ -1,3 +1,3 @@
 # Plumbus
 
-A collection of my .dotfiles and configurations
+Because everybody has a Plumbus in their home.
