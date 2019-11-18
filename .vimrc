@@ -82,6 +82,8 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 " Markdown
 Plug 'plasticboy/vim-markdown'
+" Fortran
+Plug 'vim-scripts/fortran.vim'
 
 " Code completion
 Plug 'davidhalter/jedi-vim'
