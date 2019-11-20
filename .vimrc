@@ -86,7 +86,10 @@ Plug 'plasticboy/vim-markdown'
 Plug 'vim-scripts/fortran.vim'
 
 " Code completion
+" Python
 Plug 'davidhalter/jedi-vim'
+" Typescript
+Plug 'Quramy/tsuquyomi'
 
 " Code formatting
 Plug 'tell-k/vim-autopep8'
