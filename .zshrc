@@ -24,4 +24,4 @@ export DEFAULT_USER=benchislett
 
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/cuda/bin:$PATH
-export LD_LIBRARY_PATH=/opt/cuda/lib64
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/usr/lib

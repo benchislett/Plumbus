@@ -27,3 +27,5 @@ alias gpo='git push --set-upstream origin HEAD'
 alias renet='nmcli networking off && nmcli networking on'
 alias renetfull='systemctl restart NetworkManager.service'
 
+# Pacman
+alias newmirrors='rankmirrors -n 16 /etc/pacman.d/mirrorlist.all_unordered > /etc/pacman.d/mirrorlist'
