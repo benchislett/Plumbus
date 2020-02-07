@@ -22,6 +22,8 @@ export TERMINAL='urxvt'
 export EDITOR='vim'
 export DEFAULT_USER=benchislett
 
+export JULIA_NUM_THREADS=10
+
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/usr/lib
