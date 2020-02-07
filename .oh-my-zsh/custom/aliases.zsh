@@ -1,5 +1,6 @@
 alias c='nocorrect clear'
 alias ls='ls -AFHv --color=tty'
+alias cls='nocorrect clear && ls'
 alias status-no-git='ls'
 alias status='(git rev-parse --git-dir && git status && echo && ls) || (status-no-git)'
 alias s='status'
