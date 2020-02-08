@@ -30,3 +30,9 @@ alias renetfull='systemctl restart NetworkManager.service'
 
 # Pacman
 alias newmirrors='rankmirrors -n 16 /etc/pacman.d/mirrorlist.all_unordered > /etc/pacman.d/mirrorlist'
+
+# Make
+alias make='nocorrect make'
+
+# Sudo
+alias sure='nocorrect sudo'
