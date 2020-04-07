@@ -5,6 +5,8 @@ for_window [class="^.*"] border pixel 2
 gaps inner 10
 gaps outer 5
 
+bindsym $mod+b border toggle
+
 bindsym $mod+z		gaps outer current plus 5
 bindsym $mod+Shift+z	gaps outer current minus 5
 
