@@ -101,3 +101,6 @@ let g:vim_markdown_folding_disabled = 1
 
 let g:jedi#popup_on_dot = 0
 let g:jedi#show_call_signatures = 2
+
+let c_no_curly_error = 1
+let c_no_bracket_error = 1
