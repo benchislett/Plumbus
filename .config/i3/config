@@ -129,3 +129,5 @@ exec feh --bg-fill --randomize ~/.background/*
 # Start polybar
 exec zsh ~/.config/polybar/start.sh
 
+exec picom -b
+

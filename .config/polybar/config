@@ -64,6 +64,10 @@ blue-gray = #546e7a
 
 [bar/main]
 
+# Multihead support
+
+monitor = ${env:MONITOR:}
+
 # Layout
 
 width = 100%
@@ -110,7 +114,7 @@ click-right = rofi -show window -theme ~/.rofi_theme
 
 [module/workspaces]
 type = internal/xworkspaces
-pin-workspaces = false
+pin-workspaces = true
 enable-click = true
 enable-scroll = true
 format-padding = 1

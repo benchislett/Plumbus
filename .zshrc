@@ -26,3 +26,13 @@ export JULIA_NUM_THREADS=10
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/cuda/bin:$PATH
 export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/usr/lib
+
+
+n()
+{
+    if [ -z "$NVM_DIR" ]
+    then
+        source /usr/share/nvm/init-nvm.sh
+    fi
+    nvm $@
+}
