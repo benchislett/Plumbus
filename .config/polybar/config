@@ -159,8 +159,8 @@ exec = zsh ~/.config/polybar/brightness.sh
 format-background = ${color.shade7}
 format-padding = 2
 
-scroll-up = light -A 5
-scroll-down = light -U 5
+scroll-up = brightnessctl set 5%+
+scroll-down = brightnessctl set 5%-
 
 interval = 1
 
