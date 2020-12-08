@@ -1,3 +1,4 @@
+# Shell
 alias c='nocorrect clear'
 alias ls='ls -AFHv --color=tty'
 alias cls='nocorrect clear; ls'
@@ -36,3 +37,6 @@ alias make='nocorrect make'
 
 # Sudo
 alias sure='nocorrect sudo'
+
+# Neovim
+alias vim='nvim'
