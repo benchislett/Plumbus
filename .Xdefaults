@@ -44,30 +44,3 @@ Xft.rgba:	rgb
 *.color7:       #c8cacc
 *.color15:      #edeff2
 
-
-!! URxvt Config
-
-! Transparency
-URxvt.transparent:	true
-URxvt.tintColor:	white
-URxvt.shading:		25
-
-! Extensions
-URxvt.perl-ext-common:	default,matcher,resize-font
-
-! Misc
-URxvt.geometry:		90x25+180+200
-URxvt.scrollBar:	False
-URxvt.saveLines:	3000
-URxvt.preeditType:	Root
-
-! Font Resize
-URxvt.resize-font.smaller:	C-j
-URxvt.resize-font.bigger:	C-k
-
-! Clickable URLs
-URxvt.urlLauncher:	google-chrome-stable
-URxvt.matcher.button:	1
-
-! Normal Font
-URxvt*font:xft:MesloLGM Nerd Font Mono:pixelsize=12:antialias=true

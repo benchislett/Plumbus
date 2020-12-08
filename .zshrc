@@ -17,8 +17,8 @@ source ~/.tokens.sh
 
 export LANG=en_US.UTF-8
 
-export TERMINAL='urxvt'
-export EDITOR='vim'
+export TERMINAL='kitty'
+export EDITOR='nvim'
 export DEFAULT_USER=benchislett
 
 export JULIA_NUM_THREADS=10
