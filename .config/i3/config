@@ -129,5 +129,8 @@ exec feh --bg-fill --randomize ~/.background/*
 # Start polybar
 exec zsh ~/.config/polybar/start.sh
 
+# Start compositor
 exec picom -b
 
+# Enable bluetooth
+exec bluetoothctl -- power on
