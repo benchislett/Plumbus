@@ -8,6 +8,7 @@ alias s='status'
 alias superstatus-no-git='neofetch && ls'
 alias superstatus='(git rev-parse --git-dir && neofetch && git status && echo && ls) || (superstatus-no-git)'
 alias ss='superstatus'
+alias clock='while true; do tput clear; date +"%H : %M : %S" | figlet -ct; sleep 1; done'
 
 # XDG
 alias open='xdg-open'
