@@ -56,3 +56,11 @@ set relativenumber
 " Scroll wheel
 set mouse=a
 
+" Plugins!
+
+call plug#begin('~/.vim-plugins')
+Plug 'kana/vim-operator-user'
+Plug 'rhysd/vim-clang-format'
+call plug#end()
+
+let g:clang_format#auto_format=1
