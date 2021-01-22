@@ -109,8 +109,8 @@ content-padding = 2
 content-background = ${color.shade1}
 content-foreground = ${color.foreground}
 
-click-left = rofi -show run -theme ~/.rofi_theme
-click-right = rofi -show window -theme ~/.rofi_theme
+click-left = rofi -show drun -modi drun,run,window -theme purple
+click-right = rofi -show window -modi drun,run,window -theme purple
 
 [module/workspaces]
 type = internal/xworkspaces
@@ -140,8 +140,7 @@ label-occupied-foreground = ${color.occupied}
 
 [module/github]
 type = custom/script
-exec = echo "   $(curl -fs https://api.github.com/notifications?access_token=$GH_TOKEN | jq '.[].unread' | grep -c true)"
-interval = 60
+exec = echo "   "
 
 click-left = xdg-open https://www.github.com
 
