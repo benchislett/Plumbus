@@ -16,6 +16,8 @@ xsetwacom set "22" "Mode" "Relative"
 xsetwacom set "23" "Mode" "Relative"
 
 xsetwacom set "12" "Area" "0 0 30400 19000"
+xsetwacom set "13" "Area" "0 0 30400 19000"
 xsetwacom set "22" "Area" "0 0 30400 19000"
+xsetwacom set "23" "Area" "0 0 30400 19000"
 
 exec i3
