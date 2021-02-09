@@ -59,6 +59,7 @@ set mouse=a
 " Plugins!
 
 call plug#begin('~/.vim-plugins')
+Plug 'godlygeek/tabular'
 Plug 'kana/vim-operator-user'
 Plug 'rhysd/vim-clang-format'
 Plug 'vim-jp/cpp-vim'
