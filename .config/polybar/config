@@ -138,19 +138,6 @@ label-active-foreground = ${color.active}
 label-urgent-foreground = ${color.urgent}
 label-occupied-foreground = ${color.occupied}
 
-[module/github]
-type = custom/script
-exec = echo "   "
-
-click-left = xdg-open https://www.github.com
-
-[module/gmail]
-type = custom/text
-content = 
-content-padding = 2
-
-click-left = xdg-open https://www.gmail.com
-
 [module/brightness]
 type = custom/script
 exec = zsh ~/.config/polybar/brightness.sh
