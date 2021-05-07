@@ -126,6 +126,9 @@ bindsym $mod+r mode "resize"
 # Background images
 exec feh --bg-fill --randomize ~/.background/*
 
+# Start notification manager
+exec --no-startup-id dunst
+
 # Start polybar
 exec zsh ~/.config/polybar/start.sh
 
