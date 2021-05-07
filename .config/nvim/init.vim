@@ -61,9 +61,9 @@ set mouse=a
 call plug#begin('~/.vim-plugins')
 Plug 'godlygeek/tabular'
 Plug 'kana/vim-operator-user'
-Plug 'rhysd/vim-clang-format'
+" Plug 'rhysd/vim-clang-format'
 Plug 'vim-jp/cpp-vim'
 Plug 'octol/vim-cpp-enhanced-highlight'
 call plug#end()
 
-let g:clang_format#auto_format=1
+" let g:clang_format#auto_format=1
