@@ -26,6 +26,11 @@ alias gc='git commit -v'
 alias gp='git push'
 alias gpo='git push --set-upstream origin HEAD'
 
+function gcdate {
+  git add $1
+  git commit --date "`stat -c %y $1`"
+}
+
 # Network
 alias renet='nmcli networking off && nmcli networking on'
 alias renetfull='systemctl restart NetworkManager.service'
