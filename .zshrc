@@ -23,10 +23,12 @@ export DEFAULT_USER=benchislett
 
 export JULIA_NUM_THREADS=10
 
+export CPATH=/opt/cuda/targets/x86_64-linux/include:$CPATH
 export PATH=$HOME/bin:/usr/local/bin:$PATH
 export PATH=/opt/cuda/bin:$PATH
 export PATH=$HOME/.local/bin:$PATH
-export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/usr/lib
+export PATH=$HOME/.local/share/gem/ruby/2.7.0/bin:$PATH
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/cuda/lib64:/opt/cuda/targets/x86_64-linux/lib:/usr/lib
 
 
 n()
