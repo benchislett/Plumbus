@@ -4,4 +4,4 @@
 \.config/picom
 \.config/polybar
 \.config/i3
-\.xinitrc
+dot-xinitrc
