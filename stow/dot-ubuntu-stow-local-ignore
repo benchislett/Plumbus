@@ -1,3 +1,5 @@
+## UBUNTU BASE CONFIGS
+
 # Don't need arch configs
 \.config/picom
 \.config/polybar
