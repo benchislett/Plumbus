@@ -1,0 +1,12 @@
+# Ignore git files
+\.git
+\.gitignore
+\.gitmodules
+
+# Ignore repo files
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# Ignore stow configs (such as the provided ignore configs)
+stow

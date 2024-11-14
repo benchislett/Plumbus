@@ -1,0 +1,5 @@
+# Don't need arch configs
+\.config/picom
+\.config/polybar
+\.config/i3
+\.xinitrc
