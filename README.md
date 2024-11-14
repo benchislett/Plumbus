@@ -53,3 +53,7 @@ This will also prompt you to change your default shell to ZSH, which can otherwi
 ### P10k
 
 While officially deprecated and no longer receiving support, I have yet to replace this piece of the puzzle. Install instructions: https://github.com/romkatv/powerlevel10k?tab=readme-ov-file#installation
+
+Note: For best results, the MesloLGS NF fonts should be used (download link at the install page). To set this in VSCode, set either (or maybe both):
+- "terminal.integrated.fontFamily": "MesloLGS NF"
+- "debug.console.fontFamily": "MesloLGS NF"
