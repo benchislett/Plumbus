@@ -57,3 +57,12 @@ While officially deprecated and no longer receiving support, I have yet to repla
 Note: For best results, the MesloLGS NF fonts should be used (download link at the install page). To set this in VSCode, set either (or maybe both):
 - "terminal.integrated.fontFamily": "MesloLGS NF"
 - "debug.console.fontFamily": "MesloLGS NF"
+
+### Neovim
+
+My text editor of choice. Installable on most package managers.
+
+### Vim-Plug
+
+A plugin manager for neovim. Installation instructions: https://github.com/junegunn/vim-plug#neovim
+
